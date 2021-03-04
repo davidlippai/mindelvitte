@@ -1,19 +1,19 @@
 body {
   font-family: 'Playfair Display', serif;
   background: url('assets/background1.png') no-repeat center center fixed;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
 }
 
 th {
-  max-width: 50px;
+  max-width: 3.125rem;
 }
 blockquote {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .logo {
-  width: 90px;
+  width: 3.5rem;
   height: auto;
 }
 .menu-button:hover {
@@ -22,15 +22,15 @@ blockquote {
   transition: all 0.1s ease-in-out;
 }
 .menu-button{
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 #menu-button1 {
  color: rgba(0, 128, 128, .8);
 }
 hr {
   border: solid 1px grey;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
 }
 li:hover {
   color: black;
@@ -48,30 +48,30 @@ table {
 }
 
 p {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 #first-p, #second-p {
   text-align: left;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .main-site-picture {
-  height: 400px;
+  height: 25rem;
   width: auto;
 }
 
 
 .rights {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-style: oblique;
 }
 
 .main-site-picture {
-  height: 400px;
+  height: 25rem;
   width: auto;
   border: solid 1px black;
   box-shadow: 5px 10px 10px grey;
