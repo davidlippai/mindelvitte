@@ -80,3 +80,16 @@ p {
 .image {
   vertical-align: top;
 }
+
+/*referencia-oldal*/
+
+.referencia {
+  height: 10rem;
+  width: 10rem;
+  border: solid 2px white;
+}
+
+.referencia:hover {
+  transform: scale(2.0);
+  transition: ease in-out;
+}
