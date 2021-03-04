@@ -93,3 +93,28 @@ p {
   transform: scale(2.0);
   transition: ease in-out;
 }
+
+.contact {
+  font-size: 1.5rem;
+}
+
+.left {
+  text-align: left;
+  width: 33%;
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+}
+
+i {
+  padding: 10px;
+}
+
+.center {
+  text-align: center;
+  width: 33%;
+}
+
+.r
