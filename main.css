@@ -13,7 +13,7 @@ blockquote {
 }
 
 .logo {
-  width: 3.5rem;
+  width: 15vh;
   height: auto;
 }
 .menu-button:hover {
@@ -28,7 +28,7 @@ blockquote {
  color: rgba(0, 128, 128, .8);
 }
 hr {
-  border: solid 1px grey;
+  border: solid 0.0625rem grey;
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
 }
@@ -59,11 +59,6 @@ p {
   margin-left: 1.25rem;
 }
 
-.main-site-picture {
-  height: 25rem;
-  width: auto;
-}
-
 
 .rights {
   font-size: 0.8125rem;
@@ -71,10 +66,10 @@ p {
 }
 
 .main-site-picture {
-  height: 25rem;
+  height: 60vh;
   width: auto;
-  border: solid 1px black;
-  box-shadow: 5px 10px 10px grey;
+  border: solid 0.0625rem black;
+  box-shadow: 0.3125rem 0.625rem 0.625rem grey;
 }
 
 .image {
@@ -84,9 +79,9 @@ p {
 /*referencia-oldal*/
 
 .referencia {
-  height: 10rem;
-  width: 10rem;
-  border: solid 2px white;
+  height: 30vh;
+  width: 30vh;
+  border: solid 0.125rem white;
 }
 
 .referencia:hover {
@@ -109,7 +104,7 @@ p {
 }
 
 i {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .center {
