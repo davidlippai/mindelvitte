@@ -258,7 +258,9 @@ i {
   color: rgba(0,0,0, .9);
   border: solid 2px black;
   font-weight: 600;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+	border-top: none;
+	border-left: none;
   letter-spacing: 0,25rem;
   float: left;
   box-shadow: 0.3125rem 0.625rem 0.625rem grey;
