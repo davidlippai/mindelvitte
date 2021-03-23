@@ -59,40 +59,50 @@ body {
   margin: 0 auto;
 }
 
-.company-logo {
-  width: 100%;
-  height: auto;
-  box-shadow: 0.3125rem 0.625rem 0.625rem grey;
-  margin-bottom: 1rem;
+h1 {
+	font-size: 2.25rem;
+	text-align: center;
+	Padding: 1.5rem;
+	border-bottom: solid 0.125rem black;
+	font-weight: 600;
+	border-top: solid 0.125rem black;
+	margin-top: 1rem;
+}
+
+.main-menu {
+	border-top: solid 0.125rem black;
+	padding-top: 2rem;
 }
 /*===Header MOBILE HOME PAGE===*/
 
 .slogen {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: bold;
+	padding: 1.5rem;
 }
 
 button {
-  width: 100%;
-  font-size: 2rem;
+  width: 90%;
+  font-size: 1.5rem;
   font-family: 'Playfair Display', serif;
   background-color: white;
   color: rgba(0,0,0, .9);
-  border: solid 0,3125rem black;
+  border: solid 0,3125rem white;
   font-weight: 600;
-  border-radius: 2rem;
-  letter-spacing: 0,25rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.35rem;
   box-shadow: 0.3125rem 0.625rem 0.625rem grey;
-  margin-bottom: 0.75rem;
-  
+  margin-bottom: 0.5rem;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-top: none;
+	border-left: none;
 }
 
 button:hover {
-  background-color: rgba(0,194,196, .2);
-  border: solid 0.5rem black;
   transform: scale(0.98);
   transition: all 0.3s ease-in-out;
 }
