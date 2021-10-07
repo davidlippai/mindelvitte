@@ -20,11 +20,12 @@ h1 {
   text-align: left;
   padding: 1rem;
   font-size: 2.5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   letter-spacing: 0.25rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgb(53, 207, 169);
   font-family: 'Ephesis', cursive;
   color: black;
+  text-align: center;
 }
 
 /*======HEADER END=========*/
@@ -43,21 +44,18 @@ div#menu {
 
 div#menu ul {
   list-style-type: none;
-  height: inherit;
-  margin-top: 1.5vh;
+  padding: 1rem;
   letter-spacing: 0.2rem;
 }
 
 #menu li {
-  height: inherit;
-  display: inline;
-  text-align: center;
   float: left;
+  padding: 0.4rem;
+  overflow: hidden;
+  font-size: 1.25rem;
 }
 
 li a {
-  padding: 0.6rem;
-  height: inherit;
   text-decoration: none;
   color: rgb(53, 207, 169);
   border-radius: 0.5rem;
