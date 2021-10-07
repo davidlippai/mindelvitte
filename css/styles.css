@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+
+
+/*======HEADER=========*/
+
+
+h1 {
+  text-align: left;
+  padding: 1rem;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  letter-spacing: 0.25rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(53, 207, 169);
+  font-family: 'Ephesis', cursive;
+  color: black;
+}
+
+/*======HEADER END=========*/
+
+/*======MENU=========*/
+
+div#menu {
+  border-top: solid 0.2rem black;
+  border-bottom: solid 0.2rem black;
+  background-color: rgb(80, 76, 76);
+  position: fixed;
+  top: 0;
+  overflow: hidden; 
+  width: 100%;
+}
+
+div#menu ul {
+  list-style-type: none;
+  height: inherit;
+  margin-top: 1.5vh;
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
+}
+
+#menu li {
+  height: inherit;
+  display: inline;
+  padding: 0.4rem;
+  text-align: center;
+  float: left;
+}
+
+li a {
+  padding: 0.6rem;
+  height: inherit;
+  text-decoration: none;
+  color: rgb(53, 207, 169);
+  border-radius: 0.5rem;
+  display: block;
+
+}
+
+li a:hover {
+  color: black;
+  border: solid 1px rgb(53, 207, 169);
+}
+
+/*======MENU END=========*/
+
+/*======CONTENT=========*/
+
+div#content {
+  width: 92%;
+  margin: 0 auto;
+}
+
+div.square {
+  height: 35vh;
+  margin: 2rem 1.5rem;
+  border-radius: 1rem;
+  border: solid 0.1rem black;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.384);
+}
+
+div.topicName {
+  text-align: center;
+  background: linear-gradient(90deg,rgb(53, 207, 169), rgba(255, 255, 255));
+  height: 37.5%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 2rem;
+  font-size:  1.2rem;
+  font-variant: small-caps;
+  letter-spacing: 0.25rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(128, 128, 128, 0.678);
+  font-family: 'Playfair Display SC', serif;
+}
+
+div.topicContent {
+  font-size: 1.2rem
+}
+
+div.topicContent ul {
+  list-style-type: none;
+}
+
+div.topicContent li {
+  float: none;
+  padding: 0.5rem;
+  width: 100%;
+  letter-spacing: 0.15rem;
+}
+
+div#pureContent {
+  background: linear-gradient(white, rgb(53, 207, 169));
+}
+
+p {
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem;
+}
+
+#pureContent h2 {
+  text-align: center;
+  padding: 1.5rem;
+  font-family: 'Playfair Display SC', serif;
+  font-variant-caps: petite-caps;
+}
+
+/*======CONTENT END=========*/
+
+/*======FOOTER=========*/
+
+div#footer {
+  border-top: solid 0.3rem black;
+  background-color: rgb(65, 60, 60);
+  margin: 0 auto;
+}
+
+footer h2 {
+  padding: 0.5rem;
+  color: rgb(41, 175, 142);
+  text-align: center;
+  font-family: 'Ephesis', cursive;
+  letter-spacing: 0.4rem;
+
+}
+
+table {
+  width: 100%;
+}
+
+th {
+
+  padding: 1rem;
+}
+
+th a {
+  color: black;
+}
+
+th i:hover {
+  color: rgb(53, 207, 169);
+  transition: all 0.5s ease-in-out 0s;
+  transform: rotate(360deg);
+}
+
+.author {
+ margin: 1rem;
+}
+
+article#designer {
+  font-family: 'Ephesis', cursive;
+}
+
+span {
+  font-size: 1rem;
+  color: rgb(53, 207, 169);
+  font-family: 'Ephesis', cursive;
+}
+/*======FOOTER END=========*/
+
+
+
