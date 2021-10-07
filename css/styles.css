@@ -52,7 +52,6 @@ div#menu ul {
 #menu li {
   height: inherit;
   display: inline;
-  padding: 0.4rem;
   text-align: center;
   float: left;
 }
@@ -82,7 +81,6 @@ div#content {
 }
 
 div.square {
-  height: 35vh;
   margin: 2rem 1.5rem;
   border-radius: 1rem;
   border: solid 0.1rem black;
