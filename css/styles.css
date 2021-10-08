@@ -10,6 +10,7 @@ body {
   height: 100vh;
   background-color: white;
   position: relative;
+  max-width: 100%;
 }
 
 
@@ -17,7 +18,7 @@ body {
 
 
 h1 {
-  text-align: left;
+  text-align: center;
   padding: 1rem;
   font-size: 2.5rem;
   margin-top: 3rem;
@@ -25,7 +26,7 @@ h1 {
   text-shadow: 0.2rem 0.2rem 0.2rem rgb(53, 207, 169);
   font-family: 'Ephesis', cursive;
   color: black;
-  text-align: center;
+  text-align: centergit ;
 }
 
 /*======HEADER END=========*/
@@ -44,15 +45,17 @@ div#menu {
 
 div#menu ul {
   list-style-type: none;
-  padding: 1rem;
-  letter-spacing: 0.2rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #menu li {
-  float: left;
-  padding: 0.4rem;
+  width: 32%;
+  display: inline-block;
+  text-align: center;
   overflow: hidden;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
 }
 
 li a {
@@ -60,7 +63,7 @@ li a {
   color: rgb(53, 207, 169);
   border-radius: 0.5rem;
   display: block;
-
+  padding: 0.5rem;
 }
 
 li a:hover {
@@ -174,6 +177,13 @@ th i:hover {
 
 article#designer {
   font-family: 'Ephesis', cursive;
+
+
+}
+
+.author a {
+  text-decoration: none;
+  color: rgb(53, 207, 169);
 }
 
 span {
