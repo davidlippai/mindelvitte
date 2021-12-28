@@ -38,7 +38,7 @@ section {
   grid-column: 1/13;
   background: url('../img/profil.png');
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
