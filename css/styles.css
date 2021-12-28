@@ -156,6 +156,7 @@ div.topicContent li {
 
 div#pureContent {
   background: white;
+  padding-bottom: 2rem;
 }
 
 div#pureContent p {
@@ -177,7 +178,7 @@ div#pureContent p {
 /*=====GALLERY============*/
 div#gallery {
   display: grid;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
   padding-bottom: 1rem;
   grid-template-columns: repeat(4, 1fr);
   background: rgba(255, 255, 255, 0.61);
@@ -194,6 +195,7 @@ div#gallery h2 {
   background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
   padding: 0.5rem;
   height: 12vh;
+  margin-top: -1rem;
   display: flex;
   align-items: center;
   justify-content: center;
