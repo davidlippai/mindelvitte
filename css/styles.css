@@ -7,7 +7,7 @@
 
 body {
   background-position: center;
-
+  max-width: 100vw;
 }
 
 ul {
@@ -109,13 +109,15 @@ div#menu ul {
 /*======CONTENT=========*/
 
 div#content {
-  width: 92%;
   margin: 0 auto;
 }
 
 div.square {
   height: 35vh;
-  margin: 2rem 1.5rem;
+  max-height: 300px;
+  max-width: 500px;
+  width: 85%;
+  margin: 2rem auto;
   border-radius: 1rem;
   background-color: rgba(245, 245, 245, 0.795);
   box-shadow: 0.01rem 0.8rem 0.75rem rgba(0, 0, 0, 0.384);
