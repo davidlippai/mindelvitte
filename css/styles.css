@@ -33,11 +33,6 @@ header {
 
 section {
   grid-column: 1/13;
-  background: url('../img/profil2.png');
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-size: cover;
 }
 
 h1 {
@@ -105,12 +100,18 @@ div#menu ul {
 /*======CONTENT=========*/
 
 
+div#first-topic {
+  background: url('../img/profil.png');
+  background-attachment: fixed;
+  padding: 2rem;
+
+}
 
 div.square {
   height: 35vh;
   max-height: 300px;
   max-width: 500px;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
   border-radius: 1rem;
   background-color: rgba(245, 245, 245, 0.795);
   box-shadow: 0.01rem 0.8rem 0.75rem rgba(0, 0, 0, 0.384);
@@ -172,10 +173,11 @@ div#pureContent p {
 /*=====GALLERY============*/
 div#gallery {
   display: grid;
-  margin: 0 auto 2rem;
   padding-bottom: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  background: rgba(255, 255, 255, 0.61);
+  background: url('../img/profil2.png');
+  background-attachment: fixed;
+  background-size: cover;
   grid-gap: 0.5rem;
 }
 
