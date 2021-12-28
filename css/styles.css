@@ -156,13 +156,13 @@ div.topicContent li {
 
 div#pureContent {
   background: white;
-
 }
 
-p {
+div#pureContent p {
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
   padding: 1rem;
+  text-align: center;
 }
 
 #pureContent h2 {

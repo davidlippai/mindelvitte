@@ -22,6 +22,7 @@
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link
             href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
             rel="stylesheet"
@@ -50,7 +51,7 @@
                     </nav>
                 </div>
                 <div id="company-name">
-                    <h1>
+                    <h1 data-aos="fade-in">
                         <i class="fa fa-truck" aria-hidden="true"></i>
                         Mindelvitte
                     </h1>
@@ -97,28 +98,28 @@
                 </div>
                 <div id="pureContent">
                     <h2>Miért válasszon minket?</h2>
-                    <p>
+                    <p data-aos="fade-right">
                         Pontos és gyors szállítást nyújtunk minden Ügyfelünknek.
                         Folyamatosan bővülő vállalkozásunk törekszik minden
                         szállítási igényt kiszolgálni, legyen az zöldhulladék
                         elszállítás, raklapos áruszállítás vagy akár csak egy
                         bútor szállítása, költöztetése.
                     </p>
-                    <p>
+                    <p data-aos="fade-left">
                         Magánszemélyeknek és cégeknek egyaránt szállítunk
                         100%-os elégedettségi rátával. Rugalmas időpontfoglalás
                         és alacsony árak jellemeznek minket. Országosan
                         vállalunk szállítási tevékenységet!
                     </p>
-                    <p>
+                    <p data-aos="fade-up">
                         Magánszemélyeknek és cégeknek egyaránt szállítunk
                         100%-os elégedettségi rátával. Rugalmas időpontfoglalás
                         és alacsony árak jellemeznek minket. Országosan
                         vállalunk szállítási tevékenységet!
                     </p>
                 </div>
-                <div id="gallery">
-                    <a href="#gallery"> <h2 id="gallery-link">Tekintse meg Galériánkat!</h2></a>
+                <div id="gallery" data-aos="fade-in">
+                    <a href="#gallery"><h2 id="gallery-link">Tekintse meg Galériánkat!</h2></a>
                     <img
                         class="gallery-img"
                         src="img/gallery/kep1.JPG"
@@ -201,7 +202,7 @@
                     />
                 </div>
             </section>
-            <footer>
+            <footer data-aos="fade-in">
                 <h2>Social Media</h2>
                 <div id="social">
                     <i class="fa fa-3x fa-instagram" aria-hidden="true"></i>
@@ -229,5 +230,11 @@
             </footer>
         </div>
         <script src="app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 750
+          });
+        </script>
     </body>
 </html>
