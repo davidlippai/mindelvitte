@@ -176,7 +176,9 @@ div#gallery {
   grid-template-columns: repeat(4, 1fr);
   background: url('../img/profil2.png');
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-gap: 0.5rem;
 }
 
