@@ -6,11 +6,8 @@
 }
 
 body {
-  background: url(../img/body-background-big.jpg);
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: ;
+
 }
 
 ul {
@@ -39,6 +36,11 @@ header {
 
 section {
   grid-column: 1/13;
+  background: url('../img/profil.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -114,7 +116,7 @@ div.square {
   height: 35vh;
   margin: 2rem 1.5rem;
   border-radius: 1rem;
-  background-color: white;
+  background-color: rgba(245, 245, 245, 0.795);
   box-shadow: 0.01rem 0.8rem 0.75rem rgba(0, 0, 0, 0.384);
 }
 
