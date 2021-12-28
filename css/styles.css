@@ -6,71 +6,98 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  position: relative;
-  max-width: 100%;
+  background: url(../img/body-background-big.jpg);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none
+  ;
+}
+
+div#container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
 }
 
 
 /*======HEADER=========*/
 
 
+header {
+  grid-column: 1/13;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
+}
+
+section {
+  grid-column: 1/13;
+}
+
 h1 {
-  text-align: center;
-  padding: 1rem;
-  font-size: 2.5rem;
-  letter-spacing: 0.25rem;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgb(53, 207, 169);
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 0.35rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(3, 3, 5);
+  color: white;
   font-family: 'Ephesis', cursive;
-  color: black;
 }
 
 /*======HEADER END=========*/
 
 /*======MENU=========*/
 
-div#menu {
-  border-top: solid 0.2rem black;
-  border-bottom: solid 0.2rem black;
-  background-color: rgb(65, 60, 60);
-  top: 0;
-  position: sticky;
-  overflow: hidden; 
-  width: 100%;
+#ham-menu {
+  cursor: pointer;
+  margin: 0.5rem 0.5rem;
+  align-self: center;
 }
 
-img {
+#company-name {
+  margin: 0.5rem 0.5rem;
+  align-self: start;
+}
+
+.classOfLines {
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  color: black;
+  width: 40px;
+}
+
+nav {
   display: none;
 }
 
 div#menu ul {
-  list-style-type: none;
-  width: 90%;
-  margin: 0 auto;
+  font-size: 1.25rem;
 }
 
-#menu li {
-  width: 32%;
-  display: inline-block;
-  text-align: center;
-  overflow: hidden;
-  font-size: 1rem;
-  letter-spacing: 0.15rem;
+#menu-list li {
+  padding: 0.75rem 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.25rem;
 }
 
-li a {
+#menu-list li a {
+  color: white;
   text-decoration: none;
-  color: rgb(53, 207, 169);
-  border-radius: 0.5rem;
-  display: block;
-  padding: 0.5rem;
+  transition: all ease-in-out 0.15s;
 }
 
-li a:hover {
-  color: black;
-  border: solid 1px rgb(53, 207, 169);
+#menu-list li a:hover {
+  color: rgba(167, 167, 167, 0.849);
+  padding-left: 0.25rem;
+  transition: all ease-in-out 0.15s;
 }
 
 /*======MENU END=========*/
@@ -83,28 +110,33 @@ div#content {
 }
 
 div.square {
+  height: 35vh;
   margin: 2rem 1.5rem;
   border-radius: 1rem;
-  border: solid 0.1rem black;
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.384);
+  background-color: white;
+  box-shadow: 0.01rem 0.8rem 0.75rem rgba(0, 0, 0, 0.384);
 }
 
 div.topicName {
   text-align: center;
-  background: linear-gradient(90deg,rgb(53, 207, 169), rgba(255, 255, 255));
-  height: 37.5%;
+  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
   padding: 0.5rem;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   border-radius: 0.5rem;
   border-bottom-left-radius: 2rem;
   font-size:  1.2rem;
   font-variant: small-caps;
   letter-spacing: 0.25rem;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(128, 128, 128, 0.678);
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.678);
   font-family: 'Playfair Display SC', serif;
 }
 
 div.topicContent {
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 div.topicContent ul {
@@ -119,7 +151,7 @@ div.topicContent li {
 }
 
 div#pureContent {
-  background: linear-gradient(white, rgb(53, 207, 169));
+  background: linear-gradient(white, rgb(70, 138, 216));
 }
 
 p {
@@ -139,36 +171,34 @@ p {
 
 /*======FOOTER=========*/
 
-div#footer {
-  border-top: solid 0.3rem black;
-  background-color: rgb(65, 60, 60);
-  margin: 0 auto;
+footer {
+  grid-column: 1/13;
+
 }
 
 footer h2 {
   padding: 0.5rem;
-  color: rgb(41, 175, 142);
+  color: rgb(43, 51, 131);
   text-align: center;
   font-family: 'Ephesis', cursive;
   letter-spacing: 0.4rem;
 
 }
 
-table {
-  width: 100%;
+div#social {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-th {
-
-  padding: 1rem;
+#social i {
+  color: rgba(226, 211, 211, 0.596)
 }
 
-th a {
-  color: black;
-}
-
-th i:hover {
-  color: rgb(53, 207, 169);
+#social i:hover {
+  color: rgb(43, 51, 131);
   transition: all 0.5s ease-in-out 0s;
   transform: rotate(360deg);
 }
@@ -179,112 +209,24 @@ th i:hover {
 
 article#designer {
   font-family: 'Ephesis', cursive;
-
-
-}
-
-.author a {
-  text-decoration: none;
-  color: rgb(53, 207, 169);
+  color: rgb(43, 51, 131);
+  font-size: 1.2rem;
 }
 
 span {
-  font-size: 1rem;
-  color: rgb(53, 207, 169);
+  font-size: 1.2rem;
+  color: rgb(43, 51, 131);
   font-family: 'Ephesis', cursive;
+}
+
+span a {
+  text-decoration: none;
+}
+
+span a:visited {
+  color: rgb(43, 51, 131);
 }
 /*======FOOTER END=========*/
 
-/*=======MEDIA QUERRY======*/
-
-@media (min-width:768px) {
-
-  div.square {
-    width: 250px;
-    height: 320px;
-  }
-
-  div#firstSquare {
-    float: right;
-  }
-  
-  div#secondSquare {
-    float: left;
-  }
-
-  div#pureContent {
-    clear: right;
-  }
-
-  div#menu {
-    float: left;
-    width: 16vw;
-    border-right: solid 3px black;
-    height: 101vh;
-    position: fixed;
-    top: 0;
-    border-top: 0;
-  }
-
-  #menu li {
-    display: block;
-    width: 100%;
-    text-align: left;
-    border-bottom: solid 1px black;
-    padding-top: 0.35rem;
-    padding-bottom: 0.35rem;
-  }
 
 
-  div#head,
-  div#content,
-  div#footer,
-  hr {
-    width: 84vw;
-    float: right;
-  }
-
-  div#content {
-    padding-left: 1rem;
-  }
-
-  article#designer {
-    width: 30%;
-    float: right;
-    text-align: center;
-    padding-left: 1rem;
-  }
-
-}
-
-@media (min-width:1024px) {
-
-  div.square {
-    width: 350px;
-    height: 320px;
-  }
-
-  div#menu {
-    width: 11vw;
-  }
-
-  div#head,
-  div#content,
-  div#footer,
-  hr {
-    width: 89vw;
-    float: right;
-  }
-
-
-  h1 {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    font-size: 4rem;
-    letter-spacing: 1rem;
-  }
-
-  hr {
-    margin-top: 2rem;
-  }
-}
