@@ -7,9 +7,10 @@
 
 body {
   background: url(../img/body-background-big.jpg);
-  background-position: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-clip: ;
 }
 
 ul {
@@ -33,7 +34,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
+  background: linear-gradient(90deg,rgba(43, 50, 131), rgba(44, 94, 151));
 }
 
 section {
@@ -151,7 +152,8 @@ div.topicContent li {
 }
 
 div#pureContent {
-  background: linear-gradient(white, rgb(70, 138, 216));
+  background: white;
+
 }
 
 p {
@@ -173,12 +175,13 @@ p {
 
 footer {
   grid-column: 1/13;
-
+  background: linear-gradient(90deg,rgba(43, 50, 131), rgba(44, 94, 151));
 }
 
 footer h2 {
   padding: 0.5rem;
-  color: rgb(43, 51, 131);
+  color: white;
+  font-weight: 300;
   text-align: center;
   font-family: 'Ephesis', cursive;
   letter-spacing: 0.4rem;
@@ -194,11 +197,11 @@ div#social {
 }
 
 #social i {
-  color: rgba(226, 211, 211, 0.596)
+  color: rgb(226, 211, 211)
 }
 
 #social i:hover {
-  color: rgb(43, 51, 131);
+  color: rgb(255, 255, 255);
   transition: all 0.5s ease-in-out 0s;
   transform: rotate(360deg);
 }
@@ -209,22 +212,23 @@ div#social {
 
 article#designer {
   font-family: 'Ephesis', cursive;
-  color: rgb(43, 51, 131);
+  color: white;
   font-size: 1.2rem;
 }
 
 span {
   font-size: 1.2rem;
-  color: rgb(43, 51, 131);
+  color: white;
   font-family: 'Ephesis', cursive;
 }
 
 span a {
   text-decoration: none;
+  color: rgb(43, 51, 131);
 }
 
 span a:visited {
-  color: rgb(43, 51, 131);
+  color: white;
 }
 /*======FOOTER END=========*/
 
