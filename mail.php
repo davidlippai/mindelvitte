@@ -2,7 +2,6 @@
 <?php
 //get data from form
 $lastName = $_POST['lastName'];
-$firstName = $_POST['firstName'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 

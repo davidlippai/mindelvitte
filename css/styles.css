@@ -341,8 +341,8 @@ input,label,textarea, button {
   padding: 0.5rem;
   width: 60%;
   border-radius: 0.5rem;
-  border: none;
-  box-shadow: 0.2rem 0.2rem 0.6rem rgba(146, 146, 146, 0.678);
+  border: solid 1px rgb(50, 61, 156);
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(39, 122, 190, 0.678);
 }
 
 textarea {
