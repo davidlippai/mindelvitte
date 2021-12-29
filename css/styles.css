@@ -336,13 +336,14 @@ div#social {
 }
 
 #social i {
-  color: rgb(226, 211, 211)
+  color: rgb(226, 211, 211);
+  cursor: pointer;
 }
 
 #social i:hover {
   color: rgb(255, 255, 255);
-  transition: all 0.5s ease-in-out 0s;
-  transform: rotate(360deg);
+  transition: all 0.15s ease-in-out 0s;
+  transform: rotate(10deg) scale(0.95);
 }
 
 .author {
