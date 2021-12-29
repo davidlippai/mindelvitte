@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <meta name="author" content="David Lippai" />
+        <link
+            rel="stylesheet"
+            href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <meta
+            name="keywords"
+            content="Mindelvitte, szállítás, fuvarozás, expressz, olcsó fuvar, fuvar, költöztetés, zöldhulladék elszállítás"
+        />
+        <meta
+            name="description"
+            content="Folyamatosan bővülő vállalkozásunk törekszik minden szállítási igényt kiszolgálni, legyen az zöldhulladék elszállítás, raklapos áruszállítás vagy..."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.3.1.js"
+        ></script>
+        <title>MindElvitte | Hidasi Dániel</title>
     </head>
+
     <body>
-        <h1>Köszi!</h1>
+        <div id="container">
+            <header>
+                <div id="ham-menu">
+                    <div class="classOfLines" id="line-one"></div>
+                    <div class="classOfLines" id="line-two"></div>
+                    <div class="classOfLines" id="line-three"></div>
+                    <nav id="menu">
+                        <ul id="menu-list">
+                            <li><a href="#container">Főoldal</a></li>
+                            <li><a href="#pureContent">Miért Mi?</a></li>
+                            <li><a href="#service">Szolgáltatások</a></li>
+                            <li><a href="#gallery">Galéria</a></li>
+                            <li><a href="#offer">Árajánlat</a></li>
+                            <li><a href="#social">Kapcsolat</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="company-name">
+                    <h1 data-aos="fade-in">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        Mindelvitte
+                    </h1>
+                </div>
+            </header>
+            <section id="content">
+                <div id="pureContent">
+                    <h2>Köszönjük érdeklődését!</h2>
+                    <p>
+                        Üzenetét megkaptuk és megkezdtük annak feldolgozását. 24
+                        órán belül kollégánk jelentkezik az árajánlattal az Ön
+                        által megadott elérhetőségeken.
+                    </p>
+                    <p>Üdvözlettel: Mindelvitte csapata</p>
+                </div>
+                <div id="back">
+                    <a id="backToHome" href="index.html"
+                        ><i class="fas fa-2x fa-arrow-circle-left"></i> Vissza a
+                        Főoldalra!</a
+                    >
+                </div>
+            </section>
+        </div>
+        <script src="app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 750,
+            });
+        </script>
     </body>
 </html>

@@ -446,4 +446,27 @@ span a:visited {
 /*======FOOTER END=========*/
 
 
+/*==================Thank you================*/
 
+div#back {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+#backToHome {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  padding: 2rem 0.5rem;
+}
+
+#backToHome i {
+  color: rgba(43, 50, 131);
+}
+
+#backToHome i:hover {
+  color: rgb(64, 74, 185);
+  transform: scale(0.95);
+}
