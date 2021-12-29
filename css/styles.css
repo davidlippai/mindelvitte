@@ -102,8 +102,35 @@ div#menu ul {
 div#first-topic {
   background: url('../img/profil.png');
   background-attachment: fixed;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
+}
 
+div#first-topic p {
+  text-align: center;
+  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
+  padding: 0.5rem;
+  height: 12vh;
+  color: white;
+  border-radius: 0.5rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  font-size:  1.2rem;
+  font-variant: small-caps;
+  letter-spacing: 0.15rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.678);
+  font-family: 'Playfair Display SC', serif;
+  transition: all ease-in-out 0.25s;
+}
+
+#first-topic p a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+div#first-topic p:hover {
+  height: 14vh;
+  transition: all ease-in-out 0.25s;
 }
 
 div.square {
@@ -148,19 +175,19 @@ div.topicContent li {
   letter-spacing: 0.15rem;
 }
 
-div#pureContent {
+div#pureContent, div#service {
   background: white;
   padding-bottom: 2rem;
 }
 
-div#pureContent p {
+div#pureContent p, div#service p {
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
   padding: 1rem;
   text-align: center;
 }
 
-#pureContent h2 {
+#pureContent h2, div#service h2 {
   text-align: center;
   padding: 1.5rem;
   font-family: 'Playfair Display SC', serif;
@@ -250,6 +277,38 @@ min-height: 165px;
   transition: all ease-in-out 0.25s;
 }
 
+/*====================Service===================*/
+
+div#service h2 {
+  color: white;
+  letter-spacing: 0.25rem;
+  padding-bottom: 0;
+}
+
+div#service ul {
+  list-style-type: none;
+}
+
+div#service li {
+  float: none;
+  padding: 0.5rem;
+  letter-spacing: 0.15rem;
+  text-align: right;
+  color: white;
+  background: rgba(3, 3, 5, 0.577)
+}
+
+div#service li:nth-child(odd){
+  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
+  text-align: left;
+}
+
+div#service {
+  background: url('../img/furgon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
 
 /*======FOOTER=========*/
 
