@@ -5,7 +5,7 @@ $lastName = $_POST['lastName'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$to = 'lippai28@gmail.com';
+$to = 'info@magyarokausztriaban.at';
 
 $subject = 'Árajánlat';
 $txt =
