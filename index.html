@@ -49,6 +49,7 @@
                             <li><a href="#pureContent">Miért Mi?</a></li>
                             <li><a href="#service">Szolgáltatások</a></li>
                             <li><a href="#gallery">Galéria</a></li>
+                            <li><a href="#offer">Árajánlat</a></li> 
                             <li><a href="#social">Kapcsolat</a></li>
                         </ul>
                     </nav>
@@ -221,6 +222,18 @@
                         src="img/gallery/kep16.JPG"
                         alt="Első kép a galériából"
                     />
+                </div>
+                <div id="offer">
+                    <form action="contactform.php" method="post">
+                        <fieldset>
+                            <legend>Árajánlat</legend>
+                            <input type="text" id="lastName" name="lastName" required placeholder="Vezetéknév">
+                            <input type="text" id="firstName" name="firstName" required placeholder="Keresztnév">
+                            <input type="email" id="email" name="email" required placeholder="Email cím">
+                            <textarea name="message" placeholder="Kérjük üzenetét ide írja be.." required></textarea>
+                            <button id="submit" type="submit" name="submit">Árajánlatot kérek!</button>
+                        </fieldset>
+                    </form>
                 </div>
             </section>
             <footer data-aos="fade-in">

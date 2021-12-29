@@ -201,7 +201,6 @@ div#gallery {
   display: grid;
   padding-bottom: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  background: url('../img/profil2.png');
   background-attachment: fixed;
   background-size: contain;
   background-position: center;
@@ -310,6 +309,79 @@ div#service {
   background-attachment: scroll;
 }
 
+/*================OFFER ÁRAJÁNLAT===============*/
+div#offer {
+  margin: 0.5rem 0.5rem;
+}
+
+fieldset {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: solid 1px rgb(43, 51, 131);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  
+}
+
+fieldset legend {
+  font-family: 'Ephesis', cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+  letter-spacing: 0.25rem;
+  background: linear-gradient(90deg,rgb(56, 66, 173), rgb(44, 94, 151));
+  color: white;
+  border-radius: 1rem;
+}
+
+input,label,textarea, button {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.5rem;
+  width: 60%;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(146, 146, 146, 0.678);
+}
+
+textarea {
+min-height: 200px;
+max-height: 500px;
+width: 80%;
+margin: 0 auto;
+max-width: 300px;
+}
+
+#submit {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 0.75rem;
+  width: 35%;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(146, 146, 146, 0.678);
+  background: linear-gradient(90deg,rgba(43, 50, 131), rgba(44, 94, 151));
+  color: white;
+  letter-spacing: 0.15rem;
+  transition: all ease-in-out 0.15s;
+  animation: shining 3s linear infinite;
+}
+
+#submit:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+  transition: all ease-in-out 0.15s;
+}
+
+
+@keyframes shining {
+    0% {color: #ffffff;}
+    25% {color: #d4d4d4b2;}
+    50% {color: white;}
+    75% {color: #d4d4d4b2;}
+}
+
 /*======FOOTER=========*/
 
 footer {
@@ -343,7 +415,7 @@ div#social {
 #social i:hover {
   color: rgb(255, 255, 255);
   transition: all 0.15s ease-in-out 0s;
-  transform: rotate(10deg) scale(0.95);
+  transform: scale(0.95);
 }
 
 .author {
