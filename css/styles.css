@@ -307,8 +307,11 @@ div#gallery p {
   grid-column: 1/5;
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   line-height: 3rem;
+  font-family: 'Playfair Display SC', serif;
+  font-variant-caps: petite-caps;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.678);
   color: white;
   text-align: center;
   background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
