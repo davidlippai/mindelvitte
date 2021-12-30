@@ -11,6 +11,10 @@ div#gallery h2 {
  text-shadow: 0.2rem 0.2rem 0.5rem rgba(153, 153, 153, 0.68);;
 }
 
+div#gallery {
+  grid-column: 1/5;
+}
+
 div#gallery h2:hover {
   height: auto;
 }

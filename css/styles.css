@@ -222,20 +222,6 @@ div#gallery {
 }
 
 
-div#images {
-  display: grid;
-  grid-column: 1/5;
-  padding-bottom: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(100px, auto);
-  grid-gap: 0.5rem;
-}
-
-.visible-images {
-  max-height: auto;
-}
-
-
 #gallery a {
   text-decoration: none;
   grid-column: 2/4;
