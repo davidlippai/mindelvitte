@@ -66,6 +66,7 @@ h1 {
   margin: 0.5rem;
   color: black;
   width: 40px;
+  transition: all ease-in-out 0.5s;
 }
 
 nav {
@@ -95,6 +96,21 @@ div#menu ul {
   transition: all ease-in-out 0.15s;
 }
 
+/*===========HAM-MENU-ANIMATION=============*/
+
+.line-one-ani {
+  transform: rotate(45deg) translateX(6px) translateY(10px);
+  transition: 0.5s 0.25s;
+}
+
+.line-two-ani {
+  opacity: 0;
+}
+
+.line-three-ani {
+  transform: rotate(135deg) translateX(-5px) translateY(10px);
+  transition: 0.5s 0.25s;
+}
 /*======MENU END=========*/
 
 /*======CONTENT=========*/
@@ -129,7 +145,8 @@ div#first-topic p {
 }
 
 div#first-topic p:hover {
-  height: 14vh;
+  transform: scale(1.05);
+  z-index: 1;
   transition: all ease-in-out 0.25s;
 }
 
@@ -201,14 +218,24 @@ div#gallery {
   display: grid;
   padding-bottom: 1rem;
   grid-template-columns: repeat(4, 1fr);
-  background-attachment: fixed;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   grid-gap: 0.5rem;
 }
 
-div#gallery a {
+
+div#images {
+  display: grid;
+  grid-column: 1/5;
+  padding-bottom: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.visible-images {
+  max-height: auto;
+}
+
+
+#gallery a {
   text-decoration: none;
   grid-column: 2/4;
 }
@@ -276,6 +303,34 @@ min-height: 165px;
   transition: all ease-in-out 0.25s;
 }
 
+div#gallery p {
+  grid-column: 1/5;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem;
+  line-height: 3rem;
+  color: white;
+  text-align: center;
+  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
+}
+
+div#gallery p a {
+  font-variant: small-caps;
+  color: white;
+  border: solid 2px rgba(255, 255, 255, 0.767);
+  border-radius: 1rem;
+  padding: 0.25rem 0.75rem;
+  letter-spacing: 0.35rem;
+  display: inline-block;
+}
+
+div#gallery p a:hover {
+  transform: scale(0.95) ;
+  transition: all ease-in-out 0.25s;
+  background-color: rgb(255, 255, 255);
+  color: rgb(43, 51, 131);
+}
+
 /*====================Service===================*/
 
 div#service h2 {
@@ -339,7 +394,8 @@ input,label,textarea, button {
   display: block;
   margin: 1.5rem auto;
   padding: 0.5rem;
-  width: 60%;
+  width: 70%;
+  font-size: 1.1rem;
   border-radius: 0.5rem;
   border: solid 1px rgb(50, 61, 156);
   box-shadow: 0.2rem 0.2rem 0.6rem rgba(39, 122, 190, 0.678);
@@ -357,7 +413,7 @@ max-width: 300px;
   display: block;
   margin: 1.5rem auto;
   padding: 0.75rem;
-  width: 35%;
+  width: 40%;
   border-radius: 0.5rem;
   border: none;
   box-shadow: 0.2rem 0.2rem 0.6rem rgba(146, 146, 146, 0.678);
