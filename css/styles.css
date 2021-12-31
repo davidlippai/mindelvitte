@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 
@@ -215,32 +216,29 @@ div#pureContent p, div#service p {
 
 /*=====GALLERY============*/
 div#gallery {
-  display: grid;
   padding-bottom: 1rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 
-#gallery a {
-  text-decoration: none;
-  grid-column: 2/4;
-}
-
-div#gallery h2 {
+#gallery-link {
   text-align: center;
   background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
-  padding: 0.5rem;
+  padding: 1rem;
   height: 12vh;
-  margin-top: -1rem;
-  display: flex;
+  margin: -1rem auto 1rem ;
+  width: 45%;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   color: white;
   border-radius: 0.5rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
-  font-size:  1.2rem;
+  font-size:  1.1rem;
   font-variant: small-caps;
   letter-spacing: 0.25rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.678);
@@ -248,42 +246,31 @@ div#gallery h2 {
   transition: all ease-in-out 0.25s;
 }
 
-div#gallery h2:hover {
+#gallery-link a {
+  color: white;
+}
+
+#gallery-link:hover {
   height: 14vh;
   transition: all ease-in-out 0.25s;
 }
 
 .gallery-img {
- max-width: 100vw;
  height: 70%;
  max-height: 300px;
 border-radius: 0.25rem;
 min-height: 165px;
  width: 85%;
- display: block;
- margin: 0.25rem auto;
- align-self: center;
- grid-column: 1/3;
+ max-width: 300px;
+ max-height: 300px;
+ margin: 1rem 1rem;
+
+
  box-shadow: 0.01rem 0.8rem 0.75rem rgba(0, 0, 0, 0.384);
  cursor: pointer;
  transition: all ease-in-out 0.25s;
 }
 
-.gallery-img-right {
-  max-width: 100vw;
-  min-height: 165px;
-  max-height: 300px;
-  height: 70%;
- border-radius: 0.25rem;
-  width: 85%;
-  display: block;
-  margin: 0.25rem auto;
-  align-self: center;
-  grid-column: 3/5;
-  cursor: pointer;
-  box-shadow: 0.01rem 0.8rem 0.75rem rgba(0, 0, 0, 0.384);
-  transition: all ease-in-out 0.25s;
-}
 
 #gallery img:hover {
   transform: scale(1.1);
@@ -300,6 +287,7 @@ div#gallery p {
   font-variant-caps: petite-caps;
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.678);
   color: white;
+  width: 100%;
   text-align: center;
   background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
 }
@@ -309,9 +297,10 @@ div#gallery p a {
   color: white;
   border: solid 2px rgba(255, 255, 255, 0.767);
   border-radius: 1rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0 0.75rem;
   letter-spacing: 0.35rem;
   display: inline-block;
+  transition: all ease-in-out 0.25s;
 }
 
 div#gallery p a:hover {
@@ -319,6 +308,8 @@ div#gallery p a:hover {
   transition: all ease-in-out 0.25s;
   background-color: rgb(255, 255, 255);
   color: rgb(43, 51, 131);
+
+
 }
 
 /*====================Service===================*/
