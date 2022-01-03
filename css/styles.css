@@ -71,8 +71,13 @@ h1 {
 }
 
 nav {
-  display: none;
+  height: 0vh;
 }
+
+.ham-menu-visible {
+  height: 30vh;
+}
+
 
 div#menu ul {
   font-size: 1.25rem;
@@ -120,6 +125,9 @@ div#menu ul {
 div#first-topic {
   background: url('../img/profil.png');
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 2rem 2rem 0;
 }
 
@@ -154,7 +162,7 @@ div#first-topic p:hover {
 div.square {
   height: 35vh;
   max-height: 300px;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto 2rem;
   border-radius: 1rem;
   background-color: rgba(245, 245, 245, 0.795);
@@ -165,7 +173,6 @@ div.topicName {
   text-align: center;
   background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
   padding: 0.5rem;
-  height: 12vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,6 +205,7 @@ div#pureContent, div#service {
   padding-bottom: 2rem;
 }
 
+
 div#pureContent p, div#service p {
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
@@ -228,7 +236,6 @@ div#gallery {
   text-align: center;
   background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
   padding: 1rem;
-  height: 12vh;
   margin: -1rem auto 1rem ;
   width: 45%;
   overflow: hidden;
@@ -251,7 +258,7 @@ div#gallery {
 }
 
 #gallery-link:hover {
-  height: 14vh;
+  transform: scale(1.02);
   transition: all ease-in-out 0.25s;
 }
 
@@ -341,11 +348,14 @@ div#service {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 /*================OFFER ÁRAJÁNLAT===============*/
 div#offer {
-  margin: 0.5rem 0.5rem;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 fieldset {
@@ -504,4 +514,111 @@ div#back {
 #backToHome i:hover {
   color: rgb(64, 74, 185);
   transform: scale(0.95);
+}
+
+
+/*====================== FROM 768px====================*/
+
+@media (min-width: 768px){
+
+/*===========headeR================*/
+
+  div.classOfLines {
+    display: none;
+  }
+
+  div#ham-menu {
+    cursor: default;
+  }
+
+  nav ul#menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div#company-name{
+    font-size: 1rem;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    text-align: center;
+  }
+
+  #menu-list li {
+    text-align: center;
+  }
+
+  #menu-list li a {
+    padding: 0.5rem 1rem;
+  }
+
+  #menu-list li a:hover {
+    transition: all ease-in-out 0.15s;
+    color: rgb(255, 255, 255);
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.068);
+  }
+
+
+  nav {
+    height: 10vh;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    text-align: center; 
+   }
+  
+  .ham-menu-visible {
+    height: 10vh;
+    max-height: 10vh;
+  }
+
+  div#gallery p {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    max-width: 600px;
+  }
+
+  div#service {
+border-radius: 1rem;
+  }
+
+  footer {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  div#first-topic {
+    background: url('../img/profil2.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+  }
+
+}
+
+
+
+
+/*============1024px=================*/
+
+@media (min-width: 1024px) {
+  #menu-list li {
+    font-size: 1.35rem;
+  }
+
+   div#company-name h1{
+    font-size: 2rem;
+
+  }
+
+  #menu-list li a {
+    transition: all ease-in-out 0.15s;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+  }
+
 }
