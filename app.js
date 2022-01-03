@@ -10,8 +10,6 @@ let visibleUl = document.getElementById("menu");
 hamMenu.addEventListener('click', function(){
 
 
-
-
   firstLine.classList.toggle("line-one-ani");
   secondLine.classList.toggle("line-two-ani");
   thirdLine.classList.toggle("line-three-ani");
