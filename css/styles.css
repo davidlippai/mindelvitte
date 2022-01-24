@@ -307,37 +307,37 @@ min-height: 165px;
   transition: all ease-in-out 0.25s;
 }
 
-div#gallery p {
+div#offer p {
   grid-column: 1/5;
   font-size: 1.4rem;
   letter-spacing: 0.05rem;
   padding: 0.5rem 1rem;
+  margin: 0.5rem auto 2rem;
+  border-radius: 0.25rem;
   line-height: 3rem;
   font-family: 'Playfair Display SC', serif;
   font-variant-caps: petite-caps;
-  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.678);
-  color: white;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(221, 221, 221, 0.678);
+  
   width: 100%;
   text-align: center;
-  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
 }
 
-div#gallery p a {
+div#offer p a {
   font-variant: small-caps;
-  color: white;
-  border: solid 2px rgba(255, 255, 255, 0.767);
-  border-radius: 1rem;
-  padding: 0 0.75rem;
+  color: rgb(43, 51, 131);
+  border: solid 2px rgb(43, 51, 131);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.25rem;
   letter-spacing: 0.35rem;
-  display: inline-block;
   transition: all ease-in-out 0.25s;
 }
 
-div#gallery p a:hover {
+div#offer p a:hover {
   transform: scale(0.95) ;
   transition: all ease-in-out 0.25s;
-  background-color: rgb(255, 255, 255);
-  color: rgb(43, 51, 131);
+  background-color: rgb(43, 51, 131);
+  color: white;
 }
 /*================Gallery End============*/
 
