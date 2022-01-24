@@ -147,9 +147,9 @@ div#first-topic {
   background: url('../img/profil.png');
   background-attachment: fixed;
   -moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
   background-size: cover;
   padding: 2rem 2rem 0;
 }
