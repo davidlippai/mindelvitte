@@ -30,6 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  box-shadow: 1px 1px 10px rgb(43, 51, 131);
   background: linear-gradient(90deg,rgba(43, 50, 131), rgba(44, 94, 151));
 }
 
@@ -318,7 +319,6 @@ div#offer p {
   font-family: 'Playfair Display SC', serif;
   font-variant-caps: petite-caps;
   text-shadow: 0.2rem 0.2rem 0.2rem rgba(221, 221, 221, 0.678);
-  
   width: 100%;
   text-align: center;
 }
@@ -336,7 +336,8 @@ div#offer p a {
 div#offer p a:hover {
   transform: scale(0.95) ;
   transition: all ease-in-out 0.25s;
-  background-color: rgb(43, 51, 131);
+  background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
+  box-shadow: -1px -1px 10px rgb(43, 51, 131);
   color: white;
 }
 /*================Gallery End============*/
@@ -460,6 +461,7 @@ max-width: 300px;
 /*======FOOTER=========*/
 footer {
   grid-column: 1/13;
+  box-shadow: -1px -1px 10px rgb(43, 51, 131);
   background: linear-gradient(90deg,rgba(43, 50, 131), rgba(44, 94, 151));
 }
 
@@ -565,6 +567,7 @@ div#back {
   header {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  
   }
 
   nav ul#menu-list {
@@ -594,7 +597,7 @@ div#back {
   }
 
   nav {
-    height: 10vh;
+    height: 5vh;
     align-self: center;
     justify-self: center;
     display: flex;
