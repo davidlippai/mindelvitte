@@ -115,12 +115,12 @@ div#menu ul {
   color: white;
   text-decoration: none;
   transition: all ease-in-out 0.15s;
+  text-align: left;
 }
 
 #menu-list li a:hover {
-  color: rgba(167, 167, 167, 0.849);
-  padding-left: 0.25rem;
   transition: all ease-in-out 0.15s;
+    color: rgba(196, 196, 196, 0.808);
 }
 
 /*===========HAM-MENU-ANIMATION=============*/
@@ -638,7 +638,6 @@ div#back {
     transition: all ease-in-out 0.15s;
     color: rgb(255, 255, 255);
     border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.068);
   }
 
   nav {
@@ -689,11 +688,11 @@ border-radius: 1rem;
 /*================MEDIA FROM 1024px====================*/
 @media (min-width: 1024px) {
   #menu-list li {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
 
-  #menu-list li a {
-    padding: 0.5rem 1rem;
+  header {
+    height: 6vh;
   }
 
    div#company-name h1{
@@ -705,6 +704,13 @@ border-radius: 1rem;
     transition: all ease-in-out 0.15s;
     color: rgb(255, 255, 255);
     border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #menu-list li a:hover {
+    border: solid 1px white;
+    background-color: rgba(255, 255, 255, 0.911);
+    color: rgba(43, 50, 131);
   }
 
   div#carouselExampleInterval button {
