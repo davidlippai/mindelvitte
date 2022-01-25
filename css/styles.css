@@ -42,8 +42,8 @@ section {
   grid-column: 1/13;
 }
 
-h1 {
-  font-size: 1.25rem;
+div#company-name {
+  font-size: 1rem;
   font-weight: 200;
   letter-spacing: 0.35rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgb(3, 3, 5);
@@ -51,6 +51,10 @@ h1 {
   font-family: 'Ephesis', cursive;
   align-self: center;
   justify-self: center;
+}
+
+h1 {
+  font-size: 1.25rem;
 }
 
 /*======HEADER END=========*/

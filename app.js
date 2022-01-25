@@ -19,6 +19,22 @@ hamMenu.addEventListener('click', function(){
 
 
 
+/*name typing*/
+
+let i = 0;
+let txt = ' Mindelvitte';
+let speed = 120;
+
+function typeWriter(){
+  if (i<txt.length) {
+    document.getElementById("com-name").innerHTML +=txt.charAt(i);
+    i++;
+    setTimeout(typeWriter,speed);
+  }
+}
+
+window.onload = typeWriter;
+
 
 
 
