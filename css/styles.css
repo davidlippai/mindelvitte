@@ -172,6 +172,8 @@ div#first-topic p {
   background: linear-gradient(90deg,rgb(43, 51, 131), rgb(44, 94, 151));
   padding: 1rem;
   color: white;
+  margin: 0 auto;
+  max-width: 500px;
   border-radius: 0.5rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -196,8 +198,6 @@ div#first-topic p:hover {
 }
 
 div.square {
-  height: 35vh;
-  max-height: 300px;
   max-width: 400px;
   margin: 0 auto 2rem;
   border-radius: 1rem;
@@ -317,6 +317,8 @@ div#carouselExampleInterval button:hover {
   padding: 1rem;
   margin: -1rem auto 1rem ;
   width: 45%;
+  margin: 0 auto;
+  max-width: 500px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
