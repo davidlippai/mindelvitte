@@ -19,6 +19,13 @@ div#container {
   grid-template-columns: repeat(12,1fr);
 }
 
+
+form {
+  background: url('../img/mindelvittephoen.png');
+  background-size: contain;
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -230,9 +237,16 @@ div.topicContent li {
 }
 
 div#pureContent, div#service {
-  background: white;
   padding-bottom: 2rem;
 }
+
+div#pureContent {
+  background: url('../img/pureContentBack.png');
+  background-repeat: no-repeat;
+  background-clip: inherit;
+}
+
+
 
 
 div#pureContent p, div#service p {
