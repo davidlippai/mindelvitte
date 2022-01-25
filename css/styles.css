@@ -39,7 +39,7 @@ section {
 }
 
 h1 {
-  font-size: 1.65rem;
+  font-size: 1.35rem;
   font-weight: 200;
   letter-spacing: 0.35rem;
   text-shadow: 0.2rem 0.2rem 0.2rem rgb(3, 3, 5);
@@ -60,7 +60,7 @@ h1 {
 }
 
 #company-name {
-  margin: 0.75rem 0.5rem 0.5rem 0;
+  margin: 1rem 0.5rem 0.5rem 0;
 }
 
 .classOfLines {
@@ -239,6 +239,7 @@ div#pureContent p, div#service p {
   padding: 1.5rem;
   font-family: 'Playfair Display SC', serif;
   font-variant-caps: petite-caps;
+  font-size: 1.35rem;
 }
 
 /*======CONTENT END=========*/
@@ -250,6 +251,39 @@ div#gallery {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+.d-block {
+  max-width: 100%;
+  display: block;
+  height: 350px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+
+div#carouselExampleInterval {
+  max-width: 1024px;
+  margin: 2rem auto;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+div#carouselExampleInterval button {
+  border: solid 1px white;
+  box-shadow: none;
+  background-color: rgb(43, 51, 131);
+  height: 3rem;
+  max-height: 5vh;
+  margin-top: 45%;
+  width: 4rem;
+  opacity: 0.8;
+}
+
+div#carouselExampleInterval button:hover {
+  opacity: 1;
+  box-shadow: -1px -1px 10px white;
 }
 
 
@@ -350,6 +384,8 @@ div#service h2 {
 
 div#service ul {
   list-style-type: none;
+  font-size: 1.05rem;
+  padding-left: 0;
 }
 
 div#service li {
@@ -371,7 +407,7 @@ div#service {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  max-width: 768px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 /*====================Service END===================*/
@@ -399,10 +435,13 @@ fieldset legend {
   text-align: center;
   font-size: 1.5rem;
   padding: 0.75rem;
+  width: 60%;
+  margin: 0 auto;
   letter-spacing: 0.25rem;
   background: linear-gradient(90deg,rgb(56, 66, 173), rgb(44, 94, 151));
   color: white;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  float: none;
 }
 
 input,label,textarea, button {
@@ -557,6 +596,15 @@ div#back {
     display: none;
   }
 
+  .d-block {
+    height: 450px;
+  }
+
+  div#company-name h1{
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+  }
+
   div#ham-menu {
     cursor: default;
   }
@@ -579,6 +627,7 @@ div#back {
     justify-self: center;
     display: flex;
     text-align: center;
+    border-radius: 0.5rem;
   }
 
   #menu-list li {
@@ -588,7 +637,6 @@ div#back {
   #menu-list li a:hover {
     transition: all ease-in-out 0.15s;
     color: rgb(255, 255, 255);
-    padding-left: 1rem;
     border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.068);
   }
@@ -610,6 +658,10 @@ div#back {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     max-width: 600px;
+  }
+
+  div#carouselExampleInterval button {
+    margin-top: 30%;
   }
 
   div#service {
@@ -637,7 +689,7 @@ border-radius: 1rem;
 /*================MEDIA FROM 1024px====================*/
 @media (min-width: 1024px) {
   #menu-list li {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
   }
 
   #menu-list li a {
@@ -645,14 +697,26 @@ border-radius: 1rem;
   }
 
    div#company-name h1{
-    font-size: 2rem;
-
+    font-size: 1.55rem;
+    padding: 0.5rem;
   }
 
   #menu-list li a {
     transition: all ease-in-out 0.15s;
     color: rgb(255, 255, 255);
     border-radius: 0.5rem;
+  }
+
+  div#carouselExampleInterval button {
+    margin-top: 25%;
+  }
+
+  .d-block {
+    height: 650px;
+  }
+
+  h2 {
+    font-size: 1.35rem;
   }
 
 }
