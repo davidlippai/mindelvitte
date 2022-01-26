@@ -12,6 +12,9 @@ div#first-topic h2 {
  text-shadow: 0.2rem 0.2rem 0.5rem rgba(153, 153, 153, 0.68);;
 }
 
+form {
+  background: none;
+}
 
 
 div#gallery h2:hover {
