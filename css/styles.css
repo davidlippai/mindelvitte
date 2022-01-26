@@ -20,11 +20,6 @@ div#container {
 }
 
 
-form {
-  background: url('../img/mindelvittephoen.png');
-  background-size: contain;
-  background-repeat: repeat;
-}
 
 a {
   text-decoration: none;
@@ -446,6 +441,23 @@ div#offer {
   margin: 0 auto;
   max-width: 500px;
 }
+
+form {
+  background: url('../img/formBack.png');
+  transition: all ease-in-out .5s;
+}
+
+
+/*@keyframes lighting-waves {
+  0% {  background:url('../img/formBackAfter.png');}
+  20% {  background:url('../img/formBackAfter1.png');}
+  40% {  background:url('../img/formBackAfter2.png');}
+  60% {  background:url('../img/formBackAfter3.png');}
+  80% {  background:url('../img/formBackAfter4.png');}
+  100% {  background:url('../img/formBackAfter.png');}
+}*/
+
+
 
 fieldset {
   border-top-left-radius: 1rem;
