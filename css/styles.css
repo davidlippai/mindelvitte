@@ -623,8 +623,13 @@ div#back {
 }
 /*==================Thank you END================*/
 
+@media (min-width: 415px) {
 
+  div#pureContent, form {
+    background: none;
+  }
 
+}
 
 /*================MEDIA FROM 768px====================*/
 @media (min-width: 768px){
